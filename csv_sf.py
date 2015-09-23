@@ -108,7 +108,7 @@ lfsf=[]
 hfsf=[]
 
 print "Read Histos"
-for i in xrange(len(ptbins_hf_j0probed)-3):
+for i in xrange(len(ptbins_hf_j0probed)):
   f_lfsf.append([])
   graph_hfsc.append([])
   mc_btmp_hf.append([])
@@ -130,7 +130,7 @@ for i in xrange(len(ptbins_hf_j0probed)-3):
   
   
   
-  for j in xrange(len(etabins_lf_j0probed)-1):    
+  for j in xrange(len(etabins_lf_j0probed)):    
     f_lfsf[i].append(TF1("ptbin"+str(i)+"_etabin"+str(j),"pol6"))
     graph_hfsc[i].append([])
     
@@ -232,7 +232,7 @@ text1.SetTextSize(0.05)
 #################plot#################
 print "MAKE PLOTS"
 for k in xrange(3):
-  for i in xrange(len(ptbins_hf_j0probed)-3):
+  for i in xrange(len(ptbins_hf_j0probed)):
     print "analyzing HF"     
     #################################
     ###########HEAVY FLAVOR##########
@@ -243,7 +243,7 @@ for k in xrange(3):
     hf_nonb=mc_nonb_hf[i][0].Clone()
     hf_data=datahist_hf[i][0].Clone()    
     
-    for j in xrange(len(etabins_lf_j0probed)-1):
+    for j in xrange(len(etabins_lf_j0probed)):
 	hf_data.Add(datahist_hf[i][j])
 	hf_data.Add(datahisttmp_hf[i][j])
 	hf_b.Add(mc_btmp_hf[i][j])
@@ -253,7 +253,7 @@ for k in xrange(3):
 	if k!=0:
 	  mc_nonb_hf[i][j].Multiply(lfsf[i][j])
 	  mc_nonbtmp_hf[i][j].Multiply(lfsf[i][j])
-    for j in xrange(len(etabins_lf_j0probed)-2):
+    for j in xrange(len(etabins_lf_j0probed)):
       hf_nonb.Add(mc_nonb_hf[i][j])
       hf_nonb.Add(mc_nonbtmp_hf[i][j])	
       ###makestack###
@@ -350,7 +350,7 @@ for k in xrange(3):
   #for j in xrange(len(etabins_lf_j0probed)):
     cutlabel="Muon Channel, LF, ==2tlp, ==2 Jets, fail Z veto, >=1N_BTagT, ptbin"+str(i)+" etabin"+str(j)+" it"+ str(k) 
     print "analyzing LF" 
-    for j in xrange(len(etabins_lf_j0probed)-1):
+    for j in xrange(len(etabins_lf_j0probed)):
       datahist_lf[i][j].Add(datahisttmp_lf[i][j])    
       mc_b_lf[i][j].Add(mc_btmp_lf[i][j])
       mc_nonb_lf[i][j].Add(mc_nonbtmp_lf[i][j])

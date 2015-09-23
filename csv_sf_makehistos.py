@@ -36,8 +36,11 @@ ymin=0
 
 ptbins_hf_j1probed=["((30<=Jet_Pt[1])&&(Jet_Pt[1]<40))","((40<=Jet_Pt[1])&&(Jet_Pt[1]<60))","((60<=Jet_Pt[1])&&(Jet_Pt[1]<100))","((100<=Jet_Pt[1])&&(Jet_Pt[1]<160))","(Jet_Pt[1]>=160)"]
 ptbins_hf_j0probed=["((30<=Jet_Pt[0])&&(Jet_Pt[0]<40))","((40<=Jet_Pt[0])&&(Jet_Pt[0]<60))","((60<=Jet_Pt[0])&&(Jet_Pt[0]<100))","((100<=Jet_Pt[0])&&(Jet_Pt[0]<160))","(Jet_Pt[0]>=160)"]
-ptbins_lf_j1probed=["((30<=Jet_Pt[1])&&(Jet_Pt[1]<40))","((40<=Jet_Pt[1])&&(Jet_Pt[1]<60))","(Jet_Pt[1]>=60)"]
-ptbins_lf_j0probed=["((30<=Jet_Pt[0])&&(Jet_Pt[0]<40))","((40<=Jet_Pt[0])&&(Jet_Pt[0]<60))","(Jet_Pt[0]>=60)"]
+ptbins_lf_j1probed=["((30<=Jet_Pt[1])&&(Jet_Pt[1]<40))","((40<=Jet_Pt[1])&&(Jet_Pt[1]<60))","((60<=Jet_Pt[1])&&(Jet_Pt[1]<100))","((100<=Jet_Pt[1])&&(Jet_Pt[1]<160))","(Jet_Pt[1]>=160)"]
+ptbins_lf_j0probed=["((30<=Jet_Pt[0])&&(Jet_Pt[0]<40))","((40<=Jet_Pt[0])&&(Jet_Pt[0]<60))","((60<=Jet_Pt[0])&&(Jet_Pt[0]<100))","((100<=Jet_Pt[0])&&(Jet_Pt[0]<160))","(Jet_Pt[0]>=160)"]
+
+#ptbins_lf_j1probed=["((30<=Jet_Pt[1])&&(Jet_Pt[1]<40))","((40<=Jet_Pt[1])&&(Jet_Pt[1]<60))","(Jet_Pt[1]>=60)"]
+#ptbins_lf_j0probed=["((30<=Jet_Pt[0])&&(Jet_Pt[0]<40))","((40<=Jet_Pt[0])&&(Jet_Pt[0]<60))","(Jet_Pt[0]>=60)"]
 	
 etabins_lf_j0probed=["abs(Jet_Eta[0])<0.8","(0.8<=abs(Jet_Eta[0]))&&(abs(Jet_Eta[0]<1.6))","(1.6<=abs(Jet_Eta[0]))&&(abs(Jet_Eta[0])<2.4)"]
 etabins_lf_j1probed=["abs(Jet_Eta[1])<0.8","(0.8<=abs(Jet_Eta[1]))&&(abs(Jet_Eta[1]<1.6))","(1.6<=abs(Jet_Eta[1]))&&(abs(Jet_Eta[1])<2.4)"]
